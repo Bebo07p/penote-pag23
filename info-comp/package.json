@@ -1,0 +1,30 @@
+{
+  "name": "info-comp",
+  "version": "1.0.0",
+  "description": "INFO COMP - frontend + express backend para subir info (admin-only).",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "NODE_ENV=development nodemon server.js",
+    "create-admin": "node create-admin.js"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "better-sqlite3": "^8.0.0",
+    "connect-sqlite3": "^0.9.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "helmet": "^6.0.0",
+    "multer": "^1.4.5-lts.1",
+    "sharp": "^0.32.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
